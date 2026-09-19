@@ -43,8 +43,8 @@ photocean 是一个 iOS 相册应用，可以浏览 Immich、MT Photos 服务器
 | 待处理 / new | 还没看，在排队 |
 | 需要更多信息 / needs info | 需要你补一样东西，回复里会写清楚；14 天没有回音会先关闭，之后补上信息留言即可，我们会重新打开 |
 | 暂时无法复现 / cannot reproduce | 照你的步骤没能重现，回复里会写明试过什么 |
-| 已确认·另行排期 / confirmed, scheduled | 原因已经查清，但改动较大，会在后续版本处理 |
-| 已修复·待发版 / fixed, pending release | 已经修好，等下一个版本发布；发布后会通知并关闭 |
+| 已确认·另行排期 / confirmed (fix later) | 原因已经查清，但改动较大，会在后续版本处理 |
+| 已修复·待发版 / fixed (pending release) | 已经修好，等下一个版本发布；发布后会通知并关闭 |
 | 已发布 / released | 修复已随某个版本发布，更新后应该不再出现 |
 | 新版已修复 / fixed in newer version | 你用的版本较旧，这个问题在更新的版本里已经修好 |
 | 设计如此 / by design | 这是有意为之，回复里会说明原因 |
@@ -100,8 +100,8 @@ Every issue gets a status label and a short explanation. Replies come from our b
 | 待处理 / new | Not looked at yet |
 | 需要更多信息 / needs info | We need one more thing from you, described in the reply. Closed after 14 days without an answer; leave a comment with the information any time and we will reopen it |
 | 暂时无法复现 / cannot reproduce | We followed your steps but couldn't reproduce it; the reply lists what we tried |
-| 已确认·另行排期 / confirmed, scheduled | We know the cause, but the fix is large and will come in a later version |
-| 已修复·待发版 / fixed, pending release | Fixed, waiting for the next release; we'll notify you and close it when it ships |
+| 已确认·另行排期 / confirmed (fix later) | We know the cause, but the fix is large and will come in a later version |
+| 已修复·待发版 / fixed (pending release) | Fixed, waiting for the next release; we'll notify you and close it when it ships |
 | 已发布 / released | The fix has shipped; after updating it should be gone |
 | 新版已修复 / fixed in newer version | Your version is older; this is already fixed in a newer one |
 | 设计如此 / by design | This is intentional; the reply explains why |

@@ -16,7 +16,7 @@ body:
     id: version
     attributes:
       label: 版本与构建 / Version & build
-      description: "设置 → 关于，把「版本」「构建」两行原样抄过来 · 设置 (Settings) → 关于 (About): copy the 版本 (Version) and 构建 (Build) rows exactly"
+      description: "设置最上面 app 图标下方的「版本」「构建」两行，原样抄过来（旧版本在 设置 → 关于） · Copy the 版本 (Version) and 构建 (Build) lines under the app icon at the top of 设置 (Settings) exactly (older versions: 设置 → 关于 (About))"
       placeholder: "1.0.0（742） a1b2c3d"
     validations:
       required: true
@@ -148,7 +148,7 @@ body:
     id: log
     attributes:
       label: 诊断记录 / Diagnostic log
-      description: "设置 → 关于 → 诊断记录 → 右上角「⋯」→「导出完整记录」，再把 .txt 文件拖到这里。已自动去掉账号、密码、服务器地址、照片文件名和坐标，但可能还有相簿名、回忆标题，上传前请打开看一眼 · Settings → About → Diagnostic log → ⋯ (top right) → Export full log, then drag the .txt file here. Accounts, passwords, server addresses, photo file names and coordinates are removed automatically, but album names and memory titles may remain — please check before uploading"
+      description: "设置 → 诊断记录（旧版本：设置 → 关于 → 诊断记录）→ 右上角「⋯」→「导出完整记录」，再把 .txt 文件拖到这里。已自动去掉账号、密码、服务器地址、照片文件名和坐标，但可能还有相簿名、回忆标题，上传前请打开看一眼 · 设置 (Settings) → 诊断记录 (Diagnostic log) (older versions: via 关于 (About)) → ⋯ (top right) → 导出完整记录 (Export full log), then drag the .txt file here. Accounts, passwords, server addresses, photo file names and coordinates are removed automatically, but album names and memory titles may remain — please check before uploading"
       placeholder: "把 .txt 文件拖到这里 / Drag the .txt file here"
 
   - type: textarea

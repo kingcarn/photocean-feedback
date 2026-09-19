@@ -40,5 +40,5 @@ body:
     id: version
     attributes:
       label: 版本与构建 / Version & build
-      description: "设置 → 关于，可不填 · 设置 (Settings) → 关于 (About), optional"
+      description: "设置最上面 app 图标下方那两行，可不填 · The two lines under the app icon at the top of 设置 (Settings), optional"
       placeholder: "1.0.0（742） a1b2c3d"

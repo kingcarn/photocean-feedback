@@ -14,14 +14,14 @@ photocean 是一个 iOS 相册应用，可以浏览 Immich、MT Photos 服务器
 ## 报告问题
 
 1. 点上方的 **Issues** → **New issue** → 选 **问题报告 / Bug report**。
-2. **版本与构建**：打开 photocean → 设置 → 关于，把「版本」「构建」两行原样抄过来，例如 `1.0.0（742） a1b2c3d`。
+2. **版本与构建**：打开 photocean → 设置，把最上面 app 图标下方的「版本」「构建」两行原样抄过来，例如 `1.0.0（742） a1b2c3d`（旧版本在 设置 → 关于 里）。
    我们靠它找到你手机上运行的那份代码，请务必抄准。
 3. 尽量附上诊断记录（见下一节），它通常是定位问题最快的线索。
 4. 一个 issue 只报一个问题。
 
 ## 导出诊断记录
 
-1. 打开 photocean → 设置 → 关于 → 诊断记录。
+1. 打开 photocean → 设置 → 诊断记录（在设置最上面那一组；旧版本在 设置 → 关于 → 诊断记录）。
 2. 点右上角的「⋯」→「导出完整记录」，存到「文件」。
 3. 在表单的「诊断记录」一栏，点输入框下方的 *Paste, drop, or click to add files*，选刚才存的 `.txt` 文件。
 
@@ -71,14 +71,14 @@ This repository only collects bug reports and feature requests; the app's source
 ### Reporting a bug
 
 1. Go to **Issues** → **New issue** → choose **问题报告 / Bug report**.
-2. **Version & build**: open photocean → 设置 (Settings) → 关于 (About) and copy the 版本 (Version) and 构建 (Build) rows exactly, e.g. `1.0.0（742） a1b2c3d`.
+2. **Version & build**: open photocean → 设置 (Settings) and copy the 版本 (Version) and 构建 (Build) lines under the app icon at the top exactly, e.g. `1.0.0（742） a1b2c3d` (in older versions they are under 设置 → 关于 (About)).
    This is how we find the exact code running on your phone, so please copy it carefully.
 3. Attach the diagnostic log if you can (see below). It is usually the fastest way to the cause.
 4. One problem per issue, please.
 
 ### Exporting the diagnostic log
 
-1. Open photocean → 设置 (Settings) → 关于 (About) → 诊断记录 (Diagnostic log).
+1. Open photocean → 设置 (Settings) → 诊断记录 (Diagnostic log), in the top group of Settings (in older versions: 设置 → 关于 (About) → 诊断记录).
 2. Tap **⋯** in the top-right corner → 导出完整记录 (Export full log), and save it to Files.
 3. In the form's diagnostic log field, click *Paste, drop, or click to add files* below the text box and pick the `.txt` file.
 

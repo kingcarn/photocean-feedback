@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 填写说明 / How to report
+    url: https://github.com/kingcarn/photocean-feedback#readme
+    about: 先看这里：怎么找版本号、怎么导出诊断记录、隐私提醒 · Read this first — finding your version, exporting the log, privacy notes

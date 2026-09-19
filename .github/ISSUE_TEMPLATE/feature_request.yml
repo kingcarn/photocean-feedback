@@ -1,0 +1,44 @@
+name: 功能建议 / Feature request
+description: 提一个新功能或改进 · Suggest a new feature or an improvement
+title: "[建议 / Idea] "
+labels: ["功能建议 / feature request", "待处理 / new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        > **这里的一切都是公开的。** 附图前请先打码不想公开的内容。
+        > **Everything here is public.** Blur anything you don't want to share before attaching images.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题 / What problem do you want solved
+      description: "描述你遇到的情况，比直接说「加一个按钮」更有用 · Describe the situation you are in; it helps more than \"add a button\""
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你希望它怎么做 / How would you like it to work
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: 媒体源 / Media source
+      description: "你在用哪些（可多选，可不填） · Which ones you use (optional)"
+      multiple: true
+      options:
+        - "Immich"
+        - "MT Photos"
+        - "本机照片 / On-device photos"
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本与构建 / Version & build
+      description: "设置 → 关于，可不填 · 设置 (Settings) → 关于 (About), optional"
+      placeholder: "1.0.0（742） a1b2c3d"

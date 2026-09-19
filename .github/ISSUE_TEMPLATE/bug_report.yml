@@ -1,0 +1,166 @@
+name: 问题报告 / Bug report
+description: 崩溃、显示不对、照片缺失、同步或备份出错、卡顿 · Crashes, wrong display, missing photos, sync or backup errors, slowness
+title: "[问题 / Bug] "
+labels: ["问题 / bug", "待处理 / new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **这里的一切都是公开的，发出去就收不回。** 截图、录屏里不想公开的照片、人脸、相簿名、服务器地址，请先打码或裁掉。
+        > **Everything here is public and permanent.** Blur or crop any photos, faces, album names or server addresses you don't want to share.
+
+        填写说明见 [README](https://github.com/kingcarn/photocean-feedback#readme) · See the [README](https://github.com/kingcarn/photocean-feedback#english) for help.
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本与构建 / Version & build
+      description: "设置 → 关于，把「版本」「构建」两行原样抄过来 · 设置 (Settings) → 关于 (About): copy the 版本 (Version) and 构建 (Build) rows exactly"
+      placeholder: "1.0.0（742） a1b2c3d"
+    validations:
+      required: true
+
+  - type: input
+    id: ios
+    attributes:
+      label: iOS 版本 / iOS version
+      placeholder: "26.5"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 机型 / Device
+      placeholder: "iPhone 17 Pro"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: 媒体源 / Media source
+      description: "出问题时用的是哪些（可多选） · Which ones you use (select all that apply)"
+      multiple: true
+      options:
+        - "Immich"
+        - "MT Photos"
+        - "本机照片 / On-device photos"
+    validations:
+      required: true
+
+  - type: input
+    id: server
+    attributes:
+      label: 服务器版本 / Server version
+      description: "Immich 或 MT Photos 的版本号；只用本机照片可以不填 · Your Immich or MT Photos version; leave empty if you only use on-device photos"
+      placeholder: "Immich 3.1.0"
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 出问题的地方 / Where
+      options:
+        - "图库（时间线） / Library (timeline)"
+        - "照片查看器 / Photo viewer"
+        - "精选集（相簿、人物、地图、回忆等） / Collections (albums, people, map, memories…)"
+        - "画廊 / Gallery"
+        - "搜索 / Search"
+        - "小组件 / Widget"
+        - "备份与 iCloud 备份 / Backup & iCloud backup"
+        - "媒体源与同步 / Media sources & sync"
+        - "订阅与购买 / Subscription & purchase"
+        - "其他设置 / Other settings"
+        - "其他 / Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型 / Problem type
+      options:
+        - "崩溃或闪退 / Crash"
+        - "显示不对 / Something looks wrong"
+        - "照片缺失、重复或信息不对 / Photos missing, duplicated or with wrong info"
+        - "同步或连接出错 / Sync or connection error"
+        - "备份出错 / Backup error"
+        - "卡顿、发热或耗电 / Slow, hot or battery drain"
+        - "其他 / Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 出现频率 / How often
+      options:
+        - "每次都会 / Every time"
+        - "有时会 / Sometimes"
+        - "只出现过一次 / Only once"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤 / Steps to reproduce
+      description: "从打开 app 开始，一步一行 · Starting from opening the app, one step per line"
+      placeholder: |
+        1. 打开「图库」 / Open 图库 (Library)
+        2. 点…… / Tap …
+        3. ……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果 / What happened instead
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: 大概发生时间 / When it happened
+      description: "用来在日志里找到对应的那一段；每次都出现的话，写最近一次复现的时间 · Helps us find the right part of the log; if it happens every time, give the time you last reproduced it"
+      placeholder: "2026-09-19 15:30 左右 / around 15:30 on 2026-09-19"
+    validations:
+      required: true
+
+  - type: input
+    id: library
+    attributes:
+      label: 图库大小 / Library size
+      description: "大约多少张照片和视频（可选） · Roughly how many photos and videos (optional)"
+      placeholder: "约 2 万 / about 20,000"
+
+  - type: textarea
+    id: log
+    attributes:
+      label: 诊断记录 / Diagnostic log
+      description: "设置 → 关于 → 诊断记录 → 右上角「⋯」→「导出完整记录」，再把 .txt 文件拖到这里。已自动去掉账号、密码、服务器地址、照片文件名和坐标，但可能还有相簿名、回忆标题，上传前请打开看一眼 · Settings → About → Diagnostic log → ⋯ (top right) → Export full log, then drag the .txt file here. Accounts, passwords, server addresses, photo file names and coordinates are removed automatically, but album names and memory titles may remain — please check before uploading"
+      placeholder: "把 .txt 文件拖到这里 / Drag the .txt file here"
+
+  - type: textarea
+    id: media
+    attributes:
+      label: 截图或录屏 / Screenshots or recording
+      description: "可选；视频请控制在 10 MB 以内 · Optional; keep videos under 10 MB"
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认 / Confirm
+      options:
+        - label: "我知道这里的一切都是公开的，已检查过截图、录屏和日志里没有不想公开的内容 / I understand everything here is public, and I have checked my screenshots, recordings and log for anything I don't want to share"
+          required: true

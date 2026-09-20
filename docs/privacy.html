@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Photocean</title>
+<style>
+:root {
+  --ground: #f3f6f7;
+  --paper: #ffffff;
+  --ink: #17252c;
+  --ink-2: #4e6269;
+  --ink-3: #7d9096;
+  --rule: #dbe3e6;
+  --link: #14676d;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #0e181c;
+    --paper: #15242a;
+    --ink: #e3ecee;
+    --ink-2: #a6b8bd;
+    --ink-3: #74888e;
+    --rule: #22363d;
+    --link: #62c6c9;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 32px 20px 72px; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 18px; }
+.brand {
+  margin: 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+h1 { margin: 6px 0 0; font-size: 1.7rem; line-height: 1.3; font-weight: 700; }
+.mirror { margin: 10px 0 0; font-size: .92rem; color: var(--ink-2); }
+main { margin-top: 26px; }
+.lead { font-size: 1.06rem; }
+h2 {
+  margin: 34px 0 0; padding-top: 4px;
+  font-size: 1.14rem; line-height: 1.45; font-weight: 700;
+}
+p { margin: 12px 0 0; }
+ul { margin: 14px 0 0; padding-left: 1.3em; }
+li { margin: 4px 0; }
+.updated { margin-top: 36px; font-size: .9rem; color: var(--ink-3); }
+.qa { margin-top: 30px; padding: 18px 20px; background: var(--paper);
+      border: 1px solid var(--rule); border-radius: 10px; }
+.qa h2 { margin-top: 0; }
+.qa h2:first-child { padding-top: 0; }
+a { color: var(--link); text-underline-offset: 3px; }
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: .88em; padding: .08em .35em; border-radius: 4px;
+  background: var(--paper); border: 1px solid var(--rule);
+  overflow-wrap: anywhere;
+}
+footer {
+  margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
+  font-size: .9rem; color: var(--ink-3);
+}
+footer a { margin-right: 18px; }
+@media (max-width: 480px) { .wrap { padding: 24px 16px 56px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="brand">Photocean</p>
+<h1>隐私政策</h1>
+<p class="mirror">本页与 Photocean App 内「设置 › 关于 › 隐私政策」逐字相同，由同一份文案生成。</p>
+</header>
+<main>
+<p class="lead">Photocean没有自己的服务器，不收集任何数据，也不含广告或第三方统计工具。照片只在此设备与你的服务器之间传输。</p>
+<h2>媒体源</h2>
+<p>你添加的服务器地址和账户名保存在此设备上，密码保存在系统钥匙串中。照片只会发送到你添加的服务器。</p>
+<h2>地名</h2>
+<p>为了按地点搜索，Photocean会通过系统地图服务，根据照片的坐标查询地名。每次只发送一个坐标，不附带照片、文件名、拍摄时间或人物。查到的地名保存在此设备上，同一位置只查询一次。</p>
+<p>照片图库中的照片：iOS已查询过相同的坐标，不会增加新的信息暴露。</p>
+<p>仅在服务器上的照片：它们的坐标会首次发送给系统地图服务，这是新增的信息暴露。</p>
+<p>地图底图只按你浏览的区域加载，与你有哪些照片无关。</p>
+<h2>iCloud备份</h2>
+<p>打开“iCloud备份”后，以下数据会备份到你自己的iCloud：</p>
+<ul><li>媒体源的地址、账户名与名称</li><li>所有设置</li><li>照片图库的隐藏清单</li><li>人物的隐藏、收藏与出现频率</li><li>已删除的回忆</li><li>去过的地点（约百米精度）与地名</li><li>照片的标签与评分</li><li>识别相似照片用的特征数据（无法还原成图像）</li><li>回忆及其标题（含你改过的回忆里的照片）</li></ul>
+<p>后四项需解锁后才会备份。</p>
+<p>隐藏清单只记录照片图库中照片的拍摄时间、尺寸和文件名，用于在新设备上识别这些照片，不含照片本身。服务器上照片的隐藏状态保存在服务器上，不在备份中。</p>
+<p>人物只记录服务器分配的编号和你的设置，不含名字和面孔。已删除的回忆只记录由类型、主题和时间段生成的标识，用于在新设备上不再生成。</p>
+<p>地点是坐标归入约百米见方格子后的结果，不是每张照片的原始坐标。标签与评分是在此设备上分析得到的结果，备份后换机无需重新分析。相似照片的特征数据是一串数值，无法还原成图像。</p>
+<p>回忆只记录有哪些回忆及其标题；你修改过的回忆另外记录其中照片的拍摄时间、尺寸和文件名，不含照片本身。</p>
+<p>备份中不含密码、照片、缩略图和照片索引。密码只保存在此设备的钥匙串中，换机恢复后需重新登录每个媒体源。</p>
+<p>备份存放在你自己的iCloud中，Photocean无法读取。你可以随时在“设置”&gt;“iCloud备份”中关闭备份或删除已有备份。</p>
+<h2>诊断记录</h2>
+<p>诊断记录只保存在此设备上，只有你导出时才会离开此设备。记录中不含照片、密码、服务器地址和账户名。</p>
+<h2>权限</h2>
+<p>照片图库用于显示、整理和备份此设备上的照片；本地网络用于连接局域网中的服务器；面容ID用于打开“已隐藏”和“最近删除”；通知用于提醒新的回忆。你可以随时在“设置”App中更改。</p>
+<h2>购买</h2>
+<p>购买和订阅由App Store处理，Photocean不会获取你的付款信息。</p>
+<p class="updated">更新于2026年9月19日</p>
+</main>
+<footer>
+<a href="./">关于</a> <span>隐私政策</span> <a href="support.html">技术支持</a>
+</footer>
+</div>
+</body>
+</html>

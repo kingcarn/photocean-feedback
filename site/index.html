@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · Photocean</title>
+<link rel="canonical" href="https://photocean.com.cn/">
+<style>
+:root {
+  --ground: #f3f6f7;
+  --paper: #ffffff;
+  --ink: #17252c;
+  --ink-2: #4e6269;
+  --ink-3: #7d9096;
+  --rule: #dbe3e6;
+  --link: #14676d;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #0e181c;
+    --paper: #15242a;
+    --ink: #e3ecee;
+    --ink-2: #a6b8bd;
+    --ink-3: #74888e;
+    --rule: #22363d;
+    --link: #62c6c9;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 32px 20px 72px; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 18px; }
+.brand {
+  margin: 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+h1 { margin: 6px 0 0; font-size: 1.7rem; line-height: 1.3; font-weight: 700; }
+.mirror { margin: 10px 0 0; font-size: .92rem; color: var(--ink-2); }
+main { margin-top: 26px; }
+.lead { font-size: 1.06rem; }
+h2 {
+  margin: 34px 0 0; padding-top: 4px;
+  font-size: 1.14rem; line-height: 1.45; font-weight: 700;
+}
+p { margin: 12px 0 0; }
+ul { margin: 14px 0 0; padding-left: 1.3em; }
+li { margin: 4px 0; }
+.updated { margin-top: 36px; font-size: .9rem; color: var(--ink-3); }
+.qa { margin-top: 30px; padding: 18px 20px; background: var(--paper);
+      border: 1px solid var(--rule); border-radius: 10px; }
+.qa h2 { margin-top: 0; }
+.qa h2:first-child { padding-top: 0; }
+a { color: var(--link); text-underline-offset: 3px; }
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: .88em; padding: .08em .35em; border-radius: 4px;
+  background: var(--paper); border: 1px solid var(--rule);
+  overflow-wrap: anywhere;
+}
+footer {
+  margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
+  font-size: .9rem; color: var(--ink-3);
+}
+footer a { margin-right: 18px; }
+@media (max-width: 480px) { .wrap { padding: 24px 16px 56px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="brand">Photocean</p>
+<h1>Photocean</h1>
+
+</header>
+<main>
+<p class="lead">Photocean 是一个 iPhone 相册 App，可以浏览 Immich、MT Photos 服务器上的照片和本机照片。</p>
+<p><a href="privacy.html">隐私政策</a>　·　<a href="support.html">技术支持</a>　·　<a href="https://github.com/kingcarn/photocean-feedback/issues">提问题与建议</a></p>
+<p class="updated">应用的源代码不在这个仓库里，这里只放这几页和问题反馈。</p>
+</main>
+<footer>
+<span>关于</span> <a href="privacy.html">隐私政策</a> <a href="support.html">技术支持</a>
+</footer>
+</div>
+</body>
+</html>

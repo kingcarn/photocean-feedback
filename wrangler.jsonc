@@ -1,0 +1,35 @@
+{
+  // Cloudflare Workers 静态资源配置。**放在仓库根目录，不要放进 `site/`**——
+  // `site/` 整个目录会被原样发布出去，而 `Scripts/build-legal-pages.py --check` 也只比 `site/` 里的文件。
+  //
+  // ## 为什么要有这个文件（2026-09-24 查实）
+  //
+  // 控制台里这个项目的**部署命令是 `npx wrangler deploy`**，而仓库根目录**一个 wrangler 配置都没有**
+  // ⇒ 那条命令没有「部署什么、部署成哪个 Worker」可依，Git 推送触发的构建到不了线上。
+  // 实际上线过的只有 2026-09-20 12:48 那一次**手动部署**（提交 `04c318c`）；
+  // 其后 `d4796ad`、`209437b`、`db12f03` 三笔都没上线。
+  // ⚠️ 症状容易读错：线上 HTML 里 canonical 还写着 `photocean.com.cn`——那是**文件是旧的**的证据，
+  // 不是域名有问题（域名 2026-09-20 就换成 `photocean.kingcarn.site` 了，现在 200）。
+  //
+  // ## ⚠️ `name` MUST 与现有 Worker 逐字相同
+  //
+  // `photocean.kingcarn.site` 这个自定义域绑在**已经存在的那个 Worker** 上。名字写错不会报错——
+  // `wrangler deploy` 会**另建一个新 Worker**，域名照旧指着旧的那个，于是「部署成功了，线上没变」。
+  // 下面这个名字取自控制台里「构建令牌 photocean-feedback build token」的命名（Cloudflare 按 Worker 名生成），
+  // **首次按本文件部署之后 MUST 去线上复核一次**：取回 `/privacy` 与本地 `site/privacy.html` 逐字节比。
+  "name": "photocean-feedback",
+  "compatibility_date": "2026-09-24",
+
+  "assets": {
+    "directory": "./site",
+
+    // `/privacy` 直接出 `privacy.html`，`/privacy.html` 307 到 `/privacy`。
+    // 这是**现在线上就有的行为**（2026-09-24 实测），写明是为了别在以后被人「顺手改整齐」——
+    // 改掉它等于把已经发出去的地址（App Store 审核填的隐私政策地址、app 内那两个链接）全变成跳转。
+    "html_handling": "auto-trailing-slash",
+
+    // ⚠️ 默认是 `none`：找不到的地址回**0 字节的空 404**（2026-09-24 实测 `/nope` 就是这样），
+    // 而仓库里明明有一页双语 `404.html`。设成 `404-page` 才会用它。
+    "not_found_handling": "404-page"
+  }
+}

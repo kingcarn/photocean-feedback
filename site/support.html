@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>技术支持 · Photocean</title>
 <link rel="canonical" href="https://photocean.kingcarn.site/support">
+<link rel="alternate" hreflang="zh-Hans" href="https://photocean.kingcarn.site/support">
+<link rel="alternate" hreflang="en" href="https://photocean.kingcarn.site/en/support">
+<link rel="alternate" hreflang="x-default" href="https://photocean.kingcarn.site/en/support">
 <style>
 :root {
   --ground: #f3f6f7;
@@ -69,8 +72,9 @@ code {
 footer {
   margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
   font-size: .9rem; color: var(--ink-3);
+  display: flex; flex-wrap: wrap; gap: 6px 18px;
 }
-footer a { margin-right: 18px; }
+footer .lang { margin-left: auto; }
 @media (max-width: 480px) { .wrap { padding: 24px 16px 56px; } }
 </style>
 </head>
@@ -82,20 +86,20 @@ footer a { margin-right: 18px; }
 
 </header>
 <main>
-<p class="lead">Photocean 是一个 iPhone 相册 App，可以浏览 Immich、MT Photos 服务器上的照片和本机照片。它没有自己的服务器，照片只在此设备与你的服务器之间传输（详见<a href="privacy">隐私政策</a>）。</p>
+<p class="lead">Photocean 是一个 iPhone 相册 App，可以浏览 Immich、MT Photos 服务器上的照片和本机照片。它没有自己的服务器，照片只在此设备与你的服务器之间传输（详见<a href="/privacy">隐私政策</a>）。</p>
 <p>遇到问题、想提建议，请到 <a href="https://github.com/kingcarn/photocean-feedback/issues">kingcarn/photocean-feedback</a> 开一个 issue。issue 表单会问版本与构建号，在 App 的「设置」页最上面抄。</p>
 <p>如果是同步、备份或者显示不对，请顺带附上一份诊断记录——导出办法和上传前要注意的事，写在 <a href="https://github.com/kingcarn/photocean-feedback#readme">仓库说明</a> 里。</p>
 <div class="qa">
 <h2>连不上服务器</h2><p>请先确认服务器地址填的是完整地址（含 <code>https://</code> 或 <code>http://</code> 与端口）。局域网地址第一次连接时，系统会问「本地网络」权限——答完那个框之后，需要再点一次「连接」。公网地址必须是 HTTPS 且证书有效。</p>
 <h2>照片没有全部出现</h2><p>第一次同步要把整个图库过一遍，照片多的时候需要一些时间；「设置 › 媒体源」里能看到进度。人物、地名和智能相册要等信息补全跑完才会齐。</p>
-<h2>「腾出本机空间」能删掉哪些照片</h2><p>只删此设备上、并且已经确认服务器上存有原件的那一份。删除走系统弹框，照片进入「最近删除」，30 天内可以找回。</p>
+<h2>「释放空间」能删掉哪些照片</h2><p>只删此设备上、并且已经确认服务器上存有原件的那一份。删除走系统弹框，照片进入「最近删除」，30 天内可以找回。</p>
 <h2>换了新手机</h2><p>打开过「iCloud备份」的话，新手机装上后会问要不要恢复；恢复的是设置、媒体源与你的整理结果，照片本身仍然在你的服务器上。媒体源的密码不在备份里，需要重新登录一次。</p>
 <h2>订阅与退款</h2><p>购买和订阅都由 App Store 处理。管理或取消订阅：iOS「设置」App 顶部点你的名字 →「订阅」。退款请通过 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 向 Apple 申请。</p>
 <h2>系统要求</h2><p>iOS 26.1 或更高版本的 iPhone。</p>
 </div>
 </main>
 <footer>
-<a href="./">关于</a> <a href="privacy">隐私政策</a> <span>技术支持</span>
+<a href="/">关于</a> <a href="/privacy">隐私政策</a> <span>技术支持</span> <a class="lang" href="/en/support" hreflang="en" lang="en">English</a>
 </footer>
 </div>
 </body>

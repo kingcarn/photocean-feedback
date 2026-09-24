@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>找不到页面 · Photocean</title>
+<title>找不到页面 · Page Not Found · Photocean</title>
 <style>
 :root {
   --ground: #f3f6f7;
@@ -68,8 +68,9 @@ code {
 footer {
   margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
   font-size: .9rem; color: var(--ink-3);
+  display: flex; flex-wrap: wrap; gap: 6px 18px;
 }
-footer a { margin-right: 18px; }
+footer .lang { margin-left: auto; }
 @media (max-width: 480px) { .wrap { padding: 24px 16px 56px; } }
 </style>
 </head>
@@ -77,15 +78,19 @@ footer a { margin-right: 18px; }
 <div class="wrap">
 <header>
 <p class="brand">Photocean</p>
-<h1>找不到页面</h1>
+<h1>找不到页面 · Page Not Found</h1>
 
 </header>
 <main>
 <p class="lead">这个地址没有内容。</p>
 <p><a href="/">回到首页</a>　·　<a href="/privacy">隐私政策</a>　·　<a href="/support">技术支持</a></p>
+<div lang="en">
+<p class="lead">There’s nothing at this address.</p>
+<p><a href="/en/">Home</a> · <a href="/en/privacy">Privacy Policy</a> · <a href="/en/support">Support</a></p>
+</div>
 </main>
 <footer>
-<a href="./">关于</a> <a href="privacy">隐私政策</a> <a href="support">技术支持</a>
+<a href="/">关于</a> <a href="/privacy">隐私政策</a> <a href="/support">技术支持</a>
 </footer>
 </div>
 </body>

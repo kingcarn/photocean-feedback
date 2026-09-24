@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>隐私政策 · Photocean</title>
 <link rel="canonical" href="https://photocean.kingcarn.site/privacy">
+<link rel="alternate" hreflang="zh-Hans" href="https://photocean.kingcarn.site/privacy">
+<link rel="alternate" hreflang="en" href="https://photocean.kingcarn.site/en/privacy">
+<link rel="alternate" hreflang="x-default" href="https://photocean.kingcarn.site/en/privacy">
 <style>
 :root {
   --ground: #f3f6f7;
@@ -69,8 +72,9 @@ code {
 footer {
   margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
   font-size: .9rem; color: var(--ink-3);
+  display: flex; flex-wrap: wrap; gap: 6px 18px;
 }
-footer a { margin-right: 18px; }
+footer .lang { margin-left: auto; }
 @media (max-width: 480px) { .wrap { padding: 24px 16px 56px; } }
 </style>
 </head>
@@ -86,7 +90,7 @@ footer a { margin-right: 18px; }
 <h2>媒体源</h2>
 <p>你添加的服务器地址和账户名保存在此设备上，密码保存在系统钥匙串中。照片只会发送到你添加的服务器。</p>
 <h2>地名</h2>
-<p>为了按地点搜索，Photocean会通过系统地图服务，根据照片的坐标查询地名。每次只发送一个坐标，不附带照片、文件名、拍摄时间或人物。查到的地名保存在此设备上，同一位置只查询一次。</p>
+<p>为了按地点搜索，Photocean会通过系统地图服务，根据照片的坐标查询地名。每次只发送一个坐标，不附带照片、文件名、拍摄时间或人物。查到的地名保存在此设备上，同一位置每种语言只查询一次；媒体源已提供当前语言地名的照片不会查询。</p>
 <p>照片图库中的照片：iOS已查询过相同的坐标，不会增加新的信息暴露。</p>
 <p>仅在服务器上的照片：它们的坐标会首次发送给系统地图服务，这是新增的信息暴露。</p>
 <p>地图底图只按你浏览的区域加载，与你有哪些照片无关。</p>
@@ -106,10 +110,10 @@ footer a { margin-right: 18px; }
 <p>照片图库用于显示、整理和备份此设备上的照片；本地网络用于连接局域网中的服务器；面容ID用于打开“已隐藏”和“最近删除”；通知用于提醒新的回忆。你可以随时在“设置”App中更改。</p>
 <h2>购买</h2>
 <p>购买和订阅由App Store处理，Photocean不会获取你的付款信息。</p>
-<p class="updated">更新于2026年9月19日</p>
+<p class="updated">更新于2026年9月24日</p>
 </main>
 <footer>
-<a href="./">关于</a> <span>隐私政策</span> <a href="support">技术支持</a>
+<a href="/">关于</a> <span>隐私政策</span> <a href="/support">技术支持</a> <a class="lang" href="/en/privacy" hreflang="en" lang="en">English</a>
 </footer>
 </div>
 </body>
